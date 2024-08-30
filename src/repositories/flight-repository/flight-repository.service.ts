@@ -22,7 +22,7 @@ export class FlightRepositoryService {
     return await this.flightRepository.save(flight);
   }
 
-  async findAll(options?: FindManyOptions<Flight>): Promise<Flight[]> {
+  async findAll(options?): Promise<Flight[]> {
     return await this.flightRepository.find(options);
   }
 
